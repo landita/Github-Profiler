@@ -6,5 +6,5 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <>
       <p>hello world</p>
     </>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
