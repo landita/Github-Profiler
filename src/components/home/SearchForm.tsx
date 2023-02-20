@@ -55,12 +55,7 @@ export const SearchForm = ({ setUserInfo }: Props) => {
             error={form.isDirty()}
             {...form.getInputProps('username')}
           />
-          <Button
-            color='indigo'
-            mt={20}
-            type='submit'
-            disabled={!form.isValid()}
-          >
+          <Button color='indigo' mt={20} type='submit'>
             Submit
           </Button>
         </form>

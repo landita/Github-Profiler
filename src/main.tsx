@@ -11,6 +11,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       withGlobalStyles
       theme={{
         fontFamily: '"Nunito", sans-serif',
+        colorScheme: 'dark',
       }}
     >
       <NotificationsProvider>

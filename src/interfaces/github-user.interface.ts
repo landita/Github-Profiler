@@ -1,8 +1,3 @@
-interface Error {
-  hasError: boolean;
-  message: string;
-}
-
 export interface GithubUser {
   login?: string;
   name?: string;
@@ -10,6 +5,5 @@ export interface GithubUser {
   location?: string;
   bio?: string;
   html_url?: string;
-  error?: Error;
   isLoading?: boolean;
 }

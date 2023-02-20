@@ -13,19 +13,19 @@ export const DisplayInfo = ({
     location = 'Github',
     bio = `Don't mine me, I'm just a default value \uD83D\uDE00`,
     avatar_url = '',
-    html_url = '',
+    html_url = 'https://github.com/landita/github-profiler',
     isLoading = false,
   },
 }: Props) => {
   return (
     <>
       {isLoading ? (
-        <Flex direction='column' justify='center' align='center' h={400}>
+        <Flex direction='column' justify='center' align='center' h={481}>
           <Loader size='lg' />
         </Flex>
       ) : (
         <Card
-          shadow='sm'
+          shadow='lg'
           p='lg'
           radius='md'
           withBorder
@@ -81,7 +81,6 @@ export const DisplayInfo = ({
             component='a'
             href={html_url}
             target='_blank'
-            disabled={html_url === '' ? true : false}
           >
             Go to Github Profile
           </Button>
