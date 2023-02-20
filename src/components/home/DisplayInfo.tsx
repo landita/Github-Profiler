@@ -20,7 +20,7 @@ export const DisplayInfo = ({
   return (
     <>
       {isLoading ? (
-        <Flex direction='column' justify='center' align='center' h={481}>
+        <Flex direction='column' justify='center' align='center' h={551}>
           <Loader size='lg' />
         </Flex>
       ) : (
@@ -37,7 +37,7 @@ export const DisplayInfo = ({
           <Card.Section>
             <Image
               src={avatar_url === '' ? Octocat : avatar_url}
-              height={250}
+              height={320}
               alt='avatar'
               fit='fill'
             />
@@ -48,7 +48,7 @@ export const DisplayInfo = ({
               <Text component='span' fw={700}>
                 Login:
               </Text>{' '}
-              {login}
+              {login === null ? 'not available' : login}
             </Text>
             <Text weight={400}>
               {' '}
@@ -62,14 +62,14 @@ export const DisplayInfo = ({
               <Text component='span' fw={700}>
                 Location:
               </Text>{' '}
-              {location}
+              {location === null ? 'not available' : location}
             </Text>
             <Text weight={400}>
               {' '}
               <Text component='span' fw={700}>
                 Bio:
               </Text>{' '}
-              {bio}
+              {bio === null ? 'not available' : bio}
             </Text>
           </Stack>
 

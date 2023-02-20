@@ -14,7 +14,7 @@ const Home = () => {
     <Container
       fluid
       sx={{
-        margin: '60px auto',
+        margin: '30px auto',
       }}
     >
       <Grid
