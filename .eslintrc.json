@@ -26,7 +26,11 @@
     "no-console": "warn",
     "no-unused-vars": "warn",
     "no-duplicate-imports": "warn",
+    "no-empty": "off",
     "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/ban-types": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/naming-convention": [
       "error",
       {
